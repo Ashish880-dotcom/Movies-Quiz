@@ -10,12 +10,18 @@
     <div class="container">
         <h1>🎬 Movies Quiz</h1>
         
+        <!-- Start Button -->
+        <div id="start-container">
+            <button id="start-btn" onclick="startQuiz()">Start Quiz</button>
+            <p class="quiz-info">2 minutes • 10 seconds per question • Test your movie knowledge!</p>
+        </div>
+
         <!-- Global Timer -->
-        <div class="global-timer">
+        <div class="global-timer hidden">
             Total Time Left: <span id="globalTimer">120</span>s
         </div>
 
-        <div id="quiz-container">
+        <div id="quiz-container" class="hidden">
             <div class="question-timer">
                 Question Time: <span id="timer">10</span>s
             </div>
